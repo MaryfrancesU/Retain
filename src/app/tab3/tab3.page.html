@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="tab-header">
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="box">
+    <ion-item >
+      <ion-icon id="pfp" name="person-circle-outline"></ion-icon>
+    </ion-item>
+  </div>
+
+  
+  <ion-list>
+    <div class="box">
+      <ion-button (click)="rateUs()"> Rate our app </ion-button>
+    </div>
+    <br>
+    <div class="box">
+      <ion-label> Change Email </ion-label>
+      <ion-input placeholder={{uEmail}} (click)="changuModal()"></ion-input>
+    </div>
+    <br>
+    <div class="box">
+      <ion-label> Change Password </ion-label>
+      <ion-input type="password" value="password" (click) ="changpModal()"></ion-input>
+    </div>
+  </ion-list>
+  
+
+  <ion-text id="logout-link">
+    <a (click)="authService.SignOut()"> Log Out </a>
+  </ion-text>
+    
+
+</ion-content>

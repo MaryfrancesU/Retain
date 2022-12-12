@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Change Password </ion-title>
+    <button slot="end" id="closeButton" (click)="dismissModal()"> Close </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <form id="con">
+      <ion-label> New Password </ion-label>
+      <ion-input type="password" #newpass required> </ion-input>
+      
+      <ion-label> Confirm New Password </ion-label>
+      <ion-input type="password" #confirm> </ion-input>
+      
+      <ion-button (click)="updatePass(newpass, confirm)" > Change Password </ion-button>
+    </form>
+  </div>
+
+</ion-content>

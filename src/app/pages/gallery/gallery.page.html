@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar class="sp-tab-header">
+    <div id="header-back-button">
+      <ion-icon name="arrow-back-outline" id="back" size="large" (click)="backToExplore()"></ion-icon>
+      <ion-title> Gallery </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-text>
+    <p> You can currently take and upload pictures to the gallery, 
+      although, of course, it isn't perfect.
+    </p>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" 
+        *ngFor="let photo of photoService.photos; index as position">
+          <ion-img [src]="photo.webviewPath" id="galleryimg"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>

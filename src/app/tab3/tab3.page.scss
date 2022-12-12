@@ -1,0 +1,48 @@
+ion-list{
+    border-bottom-width: 2px;
+}
+
+ion-input{
+    margin: 1px 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    width: 50%;
+}
+
+ion-label{
+    padding-top: 2%; 
+    padding-left: 2%;
+    color: var(--main);
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.stretch{
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#pfp{
+   font-size: 1000%;
+}
+
+#logout-link, a{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    color: var(--accent);
+    font-weight: bold;
+}

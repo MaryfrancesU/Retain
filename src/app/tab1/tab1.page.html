@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar class="tab-header">
+    <ion-title >
+      Study
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Study</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-text> 
+    <ion-title id="heading"> Your Sets </ion-title>
+  </ion-text>
+
+
+  <ion-card name="set1" (click)="seeSet1()">
+    <ion-card-content>
+      <h3> Colors </h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="seeSet2()">
+    <ion-card-content>
+      <h3> Animals </h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="seeSet3()">
+    <ion-card-content>
+      <h3> Food </h3>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

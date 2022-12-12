@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="tab-header">
+    <ion-title> Reset Password </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../assets/logo.png" id="logo-img">
+
+  <ion-text class="center">
+    <h1> Forgot your password? </h1> 
+    <h4> Enter your email and we'll send you a reset link </h4>
+  </ion-text>
+
+  <form>
+    <ion-item>
+      <ion-label position="stacked"> Email </ion-label>
+      <ion-input #email required></ion-input>
+    </ion-item>
+    <ion-button id="button"  (click)="resetp(email)"> Submit </ion-button>
+  </form>
+
+</ion-content>

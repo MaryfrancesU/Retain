@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="tab-header">
+    <div id="title">
+      <ion-title>
+        Words
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> Words </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card id="colorCard" (click)="toggleContent('colorCardContent')">
+    <ion-card-header>
+      <ion-card-title> Colors </ion-card-title>
+      <ion-icon name="caret-down-outline"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content id="colorCardContent">
+    </ion-card-content> 
+  </ion-card>
+  
+  <ion-card id="animalCard" (click)="toggleContent('animalCardContent')">
+    <ion-card-header>
+      <ion-card-title> Animals </ion-card-title>
+      <ion-icon name="caret-down-outline"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content id="animalCardContent">
+    </ion-card-content> 
+  </ion-card>
+
+  <ion-card id="foodCard" (click)="toggleContent('foodCardContent')">
+    <ion-card-header>
+      <ion-card-title> Food </ion-card-title>
+      <ion-icon name="caret-down-outline"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content id="foodCardContent">
+    </ion-card-content> 
+  </ion-card>
+
+</ion-content>

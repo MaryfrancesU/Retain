@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Change Email </ion-title>
+    <button slot="end" id="closeButton" (click)="dismissModal()"> Close </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div >
+    <form id="con">
+      <ion-label> New Email </ion-label>
+      <ion-input #newemail required> </ion-input>
+    
+      <ion-label> Confirm New Email </ion-label>
+      <ion-input #confirm> </ion-input>
+      
+      <ion-button (click)="updateEmail(newemail, confirm)" > Change Email </ion-button>
+    </form>
+  </div>
+
+</ion-content>

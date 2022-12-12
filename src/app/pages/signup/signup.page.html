@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="tab-header">
+    <ion-title> Create Account </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="../assets/logo.png" id="logo-img">
+
+  <ion-text class="center">
+    <h1> RETAIN </h1> 
+    <h4> Polish your vocab skills until they sparkle! </h4>
+  </ion-text>
+  
+  <form>
+    <ion-item>
+      <ion-label position="stacked"> Email </ion-label>
+      <ion-input #email required ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"> Password </ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+    <ion-button id="button"  (click)="signUp(email, password)"> Sign Up </ion-button>
+    <ion-text class="center"> <h6> <a href="/login"> Already Have an Account? </a> </h6> </ion-text>
+  </form>
+
+
+</ion-content>
